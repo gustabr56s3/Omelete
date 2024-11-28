@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-título-subtítulo: "Young Serif", serif;
+    --font-texto: "Outfit", serif;
+    --cor-subtítulo: hsl(14, 45%, 36%);
+    --Fundo-card-receita: hsl(0, 0%, 100%);
+    --Fundo-tempo-preparação: hsl(330, 100%, 98%);
+    --Fundo-body: hsl(30, 54%, 90%);
+    --Cor-textos: hsl(30, 10%, 34%);
+    --Cor-título-principal: hsl(24, 5%, 18%);
+
+}
+body{
+    background-color: var(--Fundo-body);
+    padding: 150px 0px;
+
+}
+main{
+    padding: 40px;
+    border-radius: 32px;
+    background-color: var(--Fundo-card-receita);
+    width: 45%;
+    margin: 0 auto;
+}
+
+main img{
+    width: 100%;
+    border-radius: 26px;
+    margin-bottom: 20px;
+}
+
+.titulo h1{
+    font-family: Young Serif ;
+    font-weight: 400;
+    margin-bottom: 20px;
+    
+}
+
+.titulo p{
+    font-family: Outfit;
+    margin-bottom: 20px;
+}
+
+.tempo-preparacao h3{
+    color: var(--cor-subtítulo);
+    font-family: Outfit;
+    margin-bottom: 10px;
+    
+    
+}
+
+.tempo-preparacao{
+    background-color: var(--Fundo-tempo-preparação);
+    border-radius: 12px;
+    padding: 22px 18px;
+}
+
+li{
+    margin-left: 26px;
+    margin-bottom: 12px;
+}
+
+.tempo-preparacao ul{
+    font-family: Outfit;
+}
+
+.instrucoes h2{
+     color: var(--cor-subtítulo);
+     font-family: Young Serif ;
+     font-weight: 400;
+     margin-bottom: 20px;
+    
+}
+
+.instrucoes ol{
+    font-family: Outfit;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.ingredientes h2{
+    color: var(--cor-subtítulo);
+    font-family: Young Serif ;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.ingredientes li{
+    font-family: Outfit;
+}
+
+.nutricao h2{
+    color: var(--cor-subtítulo);
+    font-family: Young Serif ;
+    font-weight: 400;
+    margin-bottom: 20px;
+    
+    
+}
+
+hr{
+    margin: 20px 0;
+}
+
+.nutricao p{
+    font-family: Outfit;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.nutricao div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.nutricao .valor{
+    color: var(--cor-subtítulo);
+    font-weight: 600;
+}
+
+@media only screen and (max-width:772px){
+    body{
+        padding: 0;
+    }
+
+    main{
+        width: 100%;
+    }
+}
